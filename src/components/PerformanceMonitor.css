@@ -1,0 +1,237 @@
+.performance-monitor {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 320px;
+  max-height: 80vh;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border: 1px solid #dee2e6;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  z-index: 9999;
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+  font-size: 12px;
+  overflow: hidden;
+}
+
+.monitor-header {
+  background: linear-gradient(135deg, #2c5aa0 0%, #1a3d73 100%);
+  color: white;
+  padding: 12px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.monitor-header h3 {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.monitor-status {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  animation: pulse 2s infinite;
+}
+
+.status-dot.good {
+  background: #28a745;
+}
+
+.status-dot.warning {
+  background: #ffc107;
+}
+
+.status-dot.poor {
+  background: #dc3545;
+}
+
+@keyframes pulse {
+  0% { opacity: 1; }
+  50% { opacity: 0.5; }
+  100% { opacity: 1; }
+}
+
+.monitor-content {
+  max-height: calc(80vh - 100px);
+  overflow-y: auto;
+  padding: 16px;
+}
+
+.metric-group {
+  margin-bottom: 20px;
+}
+
+.metric-group:last-child {
+  margin-bottom: 0;
+}
+
+.metric-group h4 {
+  margin: 0 0 8px 0;
+  font-size: 12px;
+  font-weight: 600;
+  color: #2c5aa0;
+  border-bottom: 1px solid #e9ecef;
+  padding-bottom: 4px;
+}
+
+.metrics {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.metric {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 8px;
+  background: #f8f9fa;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+
+.metric:hover {
+  background: #e9ecef;
+}
+
+.metric-label {
+  color: #666;
+  font-weight: 500;
+}
+
+.metric-value {
+  color: #333;
+  font-weight: 600;
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+}
+
+.monitor-footer {
+  background: #f8f9fa;
+  padding: 8px 16px;
+  border-top: 1px solid #dee2e6;
+  text-align: center;
+}
+
+.monitor-footer small {
+  color: #666;
+  font-size: 10px;
+}
+
+/* Scrollbar styling */
+.monitor-content::-webkit-scrollbar {
+  width: 6px;
+}
+
+.monitor-content::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 3px;
+}
+
+.monitor-content::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 3px;
+}
+
+.monitor-content::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .performance-monitor {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    left: 10px;
+    width: auto;
+    max-height: 60vh;
+  }
+  
+  .monitor-header {
+    padding: 10px 12px;
+  }
+  
+  .monitor-header h3 {
+    font-size: 13px;
+  }
+  
+  .monitor-status {
+    font-size: 10px;
+  }
+  
+  .monitor-content {
+    padding: 12px;
+    max-height: calc(60vh - 80px);
+  }
+  
+  .metric-group h4 {
+    font-size: 11px;
+  }
+  
+  .metric {
+    padding: 3px 6px;
+  }
+  
+  .metric-label,
+  .metric-value {
+    font-size: 11px;
+  }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  .performance-monitor {
+    background: rgba(33, 37, 41, 0.95);
+    border-color: #495057;
+  }
+  
+  .metric {
+    background: #343a40;
+    color: #f8f9fa;
+  }
+  
+  .metric:hover {
+    background: #495057;
+  }
+  
+  .metric-label {
+    color: #adb5bd;
+  }
+  
+  .metric-value {
+    color: #f8f9fa;
+  }
+  
+  .monitor-footer {
+    background: #343a40;
+    border-color: #495057;
+  }
+  
+  .monitor-footer small {
+    color: #adb5bd;
+  }
+}
+
+/* Performance indicators */
+.metric-value[data-performance="good"] {
+  color: #28a745;
+}
+
+.metric-value[data-performance="warning"] {
+  color: #ffc107;
+}
+
+.metric-value[data-performance="poor"] {
+  color: #dc3545;
+}
