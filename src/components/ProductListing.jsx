@@ -1,10 +1,15 @@
 import React, { useState, useMemo, useEffect } from "react";
 import ProductCard from "./ProductCard";
 import { getCategoryData, getProductsByManufacturer } from "../data/products";
-import { useCachedSearch, useImagePreload } from "../hooks/useCache";
+import { useImagePreload } from "../hooks/useCache";
 import "./ProductListing.css";
 
-const ProductListing = ({ category, manufacturerFilter, onProductSelect }) => {
+const ProductListing = ({
+  category,
+  manufacturerFilter,
+  onProductSelect,
+  onPageChange,
+}) => {
   const [sortBy, setSortBy] = useState("relevance");
   const [searchTerm, setSearchTerm] = useState("");
   const [showFilters, setShowFilters] = useState(false);
@@ -126,6 +131,26 @@ const ProductListing = ({ category, manufacturerFilter, onProductSelect }) => {
     clearFilters();
     setShowFilters(false);
   }, [category]);
+
+  // Handle contact for price
+  const handleContactForPrice = (product) => {
+    // Navigate to contact page with product context
+    if (onPageChange) {
+      onPageChange("contact-us");
+      // In a real app, you might pass product info to the contact form
+      console.log("Contact for price requested for:", product.name);
+    }
+  };
+
+  // Handle send inquiry
+  const handleSendInquiry = (product) => {
+    // Navigate to contact page or open inquiry modal
+    if (onPageChange) {
+      onPageChange("contact-us");
+      // In a real app, you might open a specific inquiry form
+      console.log("Inquiry requested for:", product.name);
+    }
+  };
 
   return (
     <div className="product-listing">
@@ -266,6 +291,8 @@ const ProductListing = ({ category, manufacturerFilter, onProductSelect }) => {
               key={product.id}
               product={product}
               onProductSelect={onProductSelect}
+              onContactForPrice={handleContactForPrice}
+              onSendInquiry={handleSendInquiry}
             />
           ))
         ) : (

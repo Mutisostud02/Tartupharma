@@ -54,9 +54,26 @@ const ProductDetailPage = ({ productId, onBack }) => {
 
   const handleQuoteSubmit = (e) => {
     e.preventDefault();
+
+    // Get form data
+    const formData = new FormData(e.target);
+    const quoteData = {
+      productId: product.id,
+      productName: product.name,
+      firstName: formData.get("firstName"),
+      lastName: formData.get("lastName"),
+      email: formData.get("email"),
+      phone: formData.get("phone"),
+      company: formData.get("company"),
+      message: formData.get("message"),
+      timestamp: new Date().toISOString(),
+    };
+
+    console.log("Quote request submitted:", quoteData);
+
     // In a real app, this would send the form data to a server
     alert(
-      "Quote request submitted successfully! We will contact you within 24 hours."
+      `Quote request submitted successfully for ${product.name}! We will contact you within 24 hours.`
     );
     setShowQuoteForm(false);
   };
@@ -195,30 +212,31 @@ const ProductDetailPage = ({ productId, onBack }) => {
               <div className="form-row">
                 <div className="form-group">
                   <label>First Name *</label>
-                  <input type="text" required />
+                  <input type="text" name="firstName" required />
                 </div>
                 <div className="form-group">
                   <label>Last Name</label>
-                  <input type="text" />
+                  <input type="text" name="lastName" />
                 </div>
               </div>
               <div className="form-row">
                 <div className="form-group">
                   <label>Email *</label>
-                  <input type="email" required />
+                  <input type="email" name="email" required />
                 </div>
                 <div className="form-group">
                   <label>Phone *</label>
-                  <input type="tel" required />
+                  <input type="tel" name="phone" required />
                 </div>
               </div>
               <div className="form-group">
                 <label>Company Name *</label>
-                <input type="text" required />
+                <input type="text" name="company" required />
               </div>
               <div className="form-group">
                 <label>Message</label>
                 <textarea
+                  name="message"
                   rows="4"
                   placeholder={`I am interested in ${productDetails.name} (${product.id}). Please provide a quote including delivery to my location.`}
                 ></textarea>

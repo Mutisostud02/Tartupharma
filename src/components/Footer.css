@@ -76,6 +76,10 @@
   cursor: pointer;
   text-align: left;
   padding: 0;
+  width: 100%;
+  display: block;
+  position: relative;
+  z-index: 1;
 }
 
 .footer-links a:hover,

@@ -1,7 +1,7 @@
 import React from "react";
 import "./Footer.css";
 
-const Footer = ({ onPageChange }) => {
+const Footer = ({ onPageChange, onCategoryChange }) => {
   return (
     <footer className="footer">
       <div className="footer-content">
@@ -78,23 +78,56 @@ const Footer = ({ onPageChange }) => {
           <h4>Popular Categories</h4>
           <ul className="footer-links">
             <li>
-              <a href="/granulators-mills-compactors">
+              <button
+                onClick={() =>
+                  onCategoryChange &&
+                  onCategoryChange("granulators-mills-compactors")
+                }
+                className="footer-link-btn"
+              >
                 Granulators - Mills - Compactors
-              </a>
+              </button>
             </li>
             <li>
-              <a href="/mixers-powders-granules">
+              <button
+                onClick={() =>
+                  onCategoryChange &&
+                  onCategoryChange("mixers-powders-granules")
+                }
+                className="footer-link-btn"
+              >
                 Mixers for Powders and Granules
-              </a>
+              </button>
             </li>
             <li>
-              <a href="/tablet-presses">Tablet Presses</a>
+              <button
+                onClick={() =>
+                  onCategoryChange && onCategoryChange("tablet-presses")
+                }
+                className="footer-link-btn"
+              >
+                Tablet Presses
+              </button>
             </li>
             <li>
-              <a href="/capsule-filling">Capsule Filling Machines</a>
+              <button
+                onClick={() =>
+                  onCategoryChange && onCategoryChange("capsule-filling")
+                }
+                className="footer-link-btn"
+              >
+                Capsule Filling Machines
+              </button>
             </li>
             <li>
-              <a href="/coating-equipment">Coating Equipment</a>
+              <button
+                onClick={() =>
+                  onCategoryChange && onCategoryChange("coating-equipment")
+                }
+                className="footer-link-btn"
+              >
+                Coating Equipment
+              </button>
             </li>
           </ul>
         </div>
@@ -131,9 +164,24 @@ const Footer = ({ onPageChange }) => {
             &copy; 2024 Tartupharma Medical Equipments. All rights reserved.
           </p>
           <div className="footer-bottom-links">
-            <a href="/privacy-policy">Privacy Policy</a>
-            <a href="/terms-of-service">Terms of Service</a>
-            <a href="/manage-cookies">Manage Cookies</a>
+            <button
+              onClick={() => onPageChange && onPageChange("privacy-policy")}
+              className="footer-link-btn"
+            >
+              Privacy Policy
+            </button>
+            <button
+              onClick={() => onPageChange && onPageChange("terms-of-service")}
+              className="footer-link-btn"
+            >
+              Terms of Service
+            </button>
+            <button
+              onClick={() => onPageChange && onPageChange("manage-cookies")}
+              className="footer-link-btn"
+            >
+              Manage Cookies
+            </button>
           </div>
         </div>
       </div>

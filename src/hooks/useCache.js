@@ -147,19 +147,5 @@ export const useImagePreload = (imageSrcs) => {
   return { loadedImages, loading };
 };
 
-// Hook for cache statistics
-export const useCacheStats = () => {
-  const [stats, setStats] = useState(cacheManager.getStats());
-
-  const updateStats = useCallback(() => {
-    setStats(cacheManager.getStats());
-  }, []);
-
-  useEffect(() => {
-    // Update stats every 30 seconds
-    const interval = setInterval(updateStats, 30000);
-    return () => clearInterval(interval);
-  }, [updateStats]);
-
-  return { stats, updateStats };
-};
+// Hook for cache statistics - Removed due to React hooks issues
+// Use cacheManager.getStats() directly instead

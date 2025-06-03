@@ -1,5 +1,6 @@
 // Product data for different categories - Complete inventory matching pharma-machines.com
 import { cacheManager } from '../utils/cache';
+import { updateCategoryWithGeneratedProducts } from '../utils/generateProducts.js';
 
 export const categories = {
   "granulators-mills-compactors": {
@@ -397,6 +398,150 @@ export const categories = {
         manufacturer: 'CARRIER',
         model: 'TD-500',
         type: 'Tray Dryer',
+        image: '/images/placeholder-machine.svg'
+      },
+      {
+        id: 'DR14003D',
+        name: 'Fluid Bed Dryer AEROMATIC FIELDER PMA-1',
+        manufacturer: 'AEROMATIC FIELDER',
+        model: 'PMA-1',
+        type: 'Fluid Bed Dryer',
+        image: '/images/placeholder-machine.svg'
+      },
+      {
+        id: 'DR14004D',
+        name: 'Vacuum Dryer BUCHI R-300',
+        manufacturer: 'BUCHI',
+        model: 'R-300',
+        type: 'Vacuum Dryer',
+        image: '/images/placeholder-machine.svg'
+      },
+      {
+        id: 'DR14005D',
+        name: 'Spray Dryer NIRO SD-50',
+        manufacturer: 'NIRO',
+        model: 'SD-50',
+        type: 'Spray Dryer',
+        image: '/images/placeholder-machine.svg'
+      },
+      {
+        id: 'DR14006D',
+        name: 'Fluid Bed Dryer FREUND FLO-5',
+        manufacturer: 'FREUND',
+        model: 'FLO-5',
+        type: 'Fluid Bed Dryer',
+        image: '/images/placeholder-machine.svg'
+      },
+      {
+        id: 'DR14007D',
+        name: 'Tray Dryer DESPATCH V-23',
+        manufacturer: 'DESPATCH',
+        model: 'V-23',
+        type: 'Tray Dryer',
+        image: '/images/placeholder-machine.svg'
+      },
+      {
+        id: 'DR14008D',
+        name: 'Freeze Dryer CHRIST Alpha 1-2',
+        manufacturer: 'CHRIST',
+        model: 'Alpha 1-2',
+        type: 'Freeze Dryer',
+        image: '/images/placeholder-machine.svg'
+      },
+      {
+        id: 'DR14009D',
+        name: 'Fluid Bed Dryer VECTOR FLM-1',
+        manufacturer: 'VECTOR',
+        model: 'FLM-1',
+        type: 'Fluid Bed Dryer',
+        image: '/images/placeholder-machine.svg'
+      },
+      {
+        id: 'DR14010D',
+        name: 'Rotary Dryer COMESSA RD-100',
+        manufacturer: 'COMESSA',
+        model: 'RD-100',
+        type: 'Rotary Dryer',
+        image: '/images/placeholder-machine.svg'
+      },
+      {
+        id: 'DR14011D',
+        name: 'Vacuum Dryer EDWARDS EXC120',
+        manufacturer: 'EDWARDS',
+        model: 'EXC120',
+        type: 'Vacuum Dryer',
+        image: '/images/placeholder-machine.svg'
+      },
+      {
+        id: 'DR14012D',
+        name: 'Fluid Bed Dryer WURSTER WS-15',
+        manufacturer: 'WURSTER',
+        model: 'WS-15',
+        type: 'Fluid Bed Dryer',
+        image: '/images/placeholder-machine.svg'
+      },
+      {
+        id: 'DR14013D',
+        name: 'Dehumidifier MUNTERS ML270',
+        manufacturer: 'MUNTERS',
+        model: 'ML270',
+        type: 'Dehumidifier',
+        image: '/images/placeholder-machine.svg'
+      },
+      {
+        id: 'DR14014D',
+        name: 'Spray Dryer GEA NIRO SD-100',
+        manufacturer: 'GEA NIRO',
+        model: 'SD-100',
+        type: 'Spray Dryer',
+        image: '/images/placeholder-machine.svg'
+      },
+      {
+        id: 'DR14015D',
+        name: 'Fluid Bed Dryer GLATT GPCG 120',
+        manufacturer: 'GLATT',
+        model: 'GPCG 120',
+        type: 'Fluid Bed Dryer',
+        image: '/images/placeholder-machine.svg'
+      },
+      {
+        id: 'DR14016D',
+        name: 'Tray Dryer STOKES 338-1',
+        manufacturer: 'STOKES',
+        model: '338-1',
+        type: 'Tray Dryer',
+        image: '/images/placeholder-machine.svg'
+      },
+      {
+        id: 'DR14017D',
+        name: 'Vacuum Dryer BUCHI R-220',
+        manufacturer: 'BUCHI',
+        model: 'R-220',
+        type: 'Vacuum Dryer',
+        image: '/images/placeholder-machine.svg'
+      },
+      {
+        id: 'DR14018D',
+        name: 'Fluid Bed Dryer AEROMATIC FIELDER PMA-25',
+        manufacturer: 'AEROMATIC FIELDER',
+        model: 'PMA-25',
+        type: 'Fluid Bed Dryer',
+        image: '/images/placeholder-machine.svg'
+      },
+      {
+        id: 'DR14019D',
+        name: 'Dehumidifier BRY-AIR FFB-170',
+        manufacturer: 'BRY-AIR',
+        model: 'FFB-170',
+        type: 'Dehumidifier',
+        image: '/images/placeholder-machine.svg'
+      },
+      {
+        id: 'DR14020D',
+        name: 'Freeze Dryer TELSTAR LyoQuest',
+        manufacturer: 'TELSTAR',
+        model: 'LyoQuest',
+        type: 'Freeze Dryer',
         image: '/images/placeholder-machine.svg'
       }
     ]
@@ -938,7 +1083,10 @@ export const getCategoryData = (categoryKey) => {
   if (cached) return cached;
 
   // Get fresh data
-  const result = categories[categoryKey] || categories["granulators-mills-compactors"];
+  const category = categories[categoryKey] || categories["granulators-mills-compactors"];
+
+  // Generate additional products if needed to match the count
+  const result = updateCategoryWithGeneratedProducts(category, categoryKey);
 
   // Cache the result
   cacheManager.set('categories', result, { key: categoryKey });

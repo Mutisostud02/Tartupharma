@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  
+  <!-- Sample Product Pages - These would be generated dynamically in production -->
+  
+  <!-- Granulators Products -->
+  <url>
+    <loc>https://TartupharmaMedical.co.ke/product/C14292D</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://TartupharmaMedical.co.ke/images/placeholder-machine.svg</image:loc>
+      <image:title>Cone Mill QUADRO 197 S Comil</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://TartupharmaMedical.co.ke/product/G14001D</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://TartupharmaMedical.co.ke/images/placeholder-machine.svg</image:loc>
+      <image:title>High Speed Granulator DIOSNA P1-6</image:title>
+    </image:image>
+  </url>
+
+  <!-- Tablet Press Products -->
+  <url>
+    <loc>https://TartupharmaMedical.co.ke/product/TP14001D</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://TartupharmaMedical.co.ke/images/placeholder-machine.svg</image:loc>
+      <image:title>Rotary Tablet Press KORSCH XL100</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://TartupharmaMedical.co.ke/product/TP14002D</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://TartupharmaMedical.co.ke/images/placeholder-machine.svg</image:loc>
+      <image:title>Single Punch Tablet Press ERWEKA EP1</image:title>
+    </image:image>
+  </url>
+
+  <!-- Capsule Filling Products -->
+  <url>
+    <loc>https://TartupharmaMedical.co.ke/product/CF14001D</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://TartupharmaMedical.co.ke/images/placeholder-machine.svg</image:loc>
+      <image:title>Automatic Capsule Filler BOSCH GKF 400</image:title>
+    </image:image>
+  </url>
+
+  <!-- Mixer Products -->
+  <url>
+    <loc>https://TartupharmaMedical.co.ke/product/MX14001D</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://TartupharmaMedical.co.ke/images/placeholder-machine.svg</image:loc>
+      <image:title>V-Blender PATTERSON-KELLEY 8 cu ft</image:title>
+    </image:image>
+  </url>
+
+  <!-- Coating Equipment -->
+  <url>
+    <loc>https://TartupharmaMedical.co.ke/product/CT14001D</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://TartupharmaMedical.co.ke/images/placeholder-machine.svg</image:loc>
+      <image:title>Tablet Coater GLATT GC-300</image:title>
+    </image:image>
+  </url>
+
+</urlset>

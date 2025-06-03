@@ -1,7 +1,12 @@
 import React from "react";
 import "./ProductCard.css";
 
-const ProductCard = ({ product, onProductSelect }) => {
+const ProductCard = ({
+  product,
+  onProductSelect,
+  onContactForPrice,
+  onSendInquiry,
+}) => {
   return (
     <div className="product-card">
       <div className="product-image">
@@ -24,9 +29,12 @@ const ProductCard = ({ product, onProductSelect }) => {
 
       <div className="product-info">
         <h3 className="product-title">
-          <a href={`/listings/${product.id.toLowerCase()}`}>
+          <button
+            onClick={() => onProductSelect && onProductSelect(product.id)}
+            className="product-title-btn"
+          >
             {product.id} - {product.name}
-          </a>
+          </button>
         </h3>
 
         <div className="product-meta">
@@ -36,8 +44,18 @@ const ProductCard = ({ product, onProductSelect }) => {
         </div>
 
         <div className="product-actions">
-          <button className="contact-btn">Contact for Price</button>
-          <button className="inquiry-btn">Send Inquiry</button>
+          <button
+            className="contact-btn"
+            onClick={() => onContactForPrice && onContactForPrice(product)}
+          >
+            Contact for Price
+          </button>
+          <button
+            className="inquiry-btn"
+            onClick={() => onSendInquiry && onSendInquiry(product)}
+          >
+            Send Inquiry
+          </button>
         </div>
       </div>
     </div>
