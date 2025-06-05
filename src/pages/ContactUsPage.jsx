@@ -1,46 +1,46 @@
-import React, { useState } from 'react';
-import './PageStyles.css';
+import { useState } from "react";
+import "./PageStyles.css";
 
 const ContactUsPage = () => {
   const [formData, setFormData] = useState({
-    firstName: '',
-    lastName: '',
-    email: '',
-    phone: '',
-    location: '',
-    companyName: '',
-    message: '',
+    firstName: "",
+    lastName: "",
+    email: "",
+    phone: "",
+    location: "",
+    companyName: "",
+    message: "",
     acceptPrivacy: false,
-    receiveNewsletter: false
+    receiveNewsletter: false,
   });
 
   const [isSubmitted, setIsSubmitted] = useState(false);
 
   const handleInputChange = (e) => {
     const { name, value, type, checked } = e.target;
-    setFormData(prev => ({
+    setFormData((prev) => ({
       ...prev,
-      [name]: type === 'checkbox' ? checked : value
+      [name]: type === "checkbox" ? checked : value,
     }));
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log('Contact form submitted:', formData);
+    console.log("Contact form submitted:", formData);
     setIsSubmitted(true);
-    
+
     setTimeout(() => {
       setIsSubmitted(false);
       setFormData({
-        firstName: '',
-        lastName: '',
-        email: '',
-        phone: '',
-        location: '',
-        companyName: '',
-        message: '',
+        firstName: "",
+        lastName: "",
+        email: "",
+        phone: "",
+        location: "",
+        companyName: "",
+        message: "",
         acceptPrivacy: false,
-        receiveNewsletter: false
+        receiveNewsletter: false,
       });
     }, 3000);
   };
@@ -61,17 +61,19 @@ const ContactUsPage = () => {
       <div className="page-header">
         <h1>Contact Us</h1>
       </div>
-      
+
       <div className="page-content">
         <div className="contact-intro">
           <p>
-            Please use one of the following ways to contact us here at Tartupharma Medical Equipments.
+            Please use one of the following ways to contact us here at
+            Tartupharma Medical Equipments.
           </p>
           <p>
-            If you use our Contact Form, we will come back to you as soon as possible.
+            If you use our Contact Form, we will come back to you as soon as
+            possible.
           </p>
         </div>
-        
+
         <div className="contact-layout">
           <div className="contact-form-section">
             <h2>Send us a Message</h2>
@@ -99,7 +101,7 @@ const ContactUsPage = () => {
                   />
                 </div>
               </div>
-              
+
               <div className="form-row">
                 <div className="form-group">
                   <label htmlFor="email">Email *</label>
@@ -124,7 +126,7 @@ const ContactUsPage = () => {
                   />
                 </div>
               </div>
-              
+
               <div className="form-row">
                 <div className="form-group">
                   <label htmlFor="location">Location</label>
@@ -148,7 +150,7 @@ const ContactUsPage = () => {
                   />
                 </div>
               </div>
-              
+
               <div className="form-group full-width">
                 <label htmlFor="message">Message</label>
                 <textarea
@@ -160,7 +162,7 @@ const ContactUsPage = () => {
                   placeholder="Tell us about your pharmaceutical equipment needs, questions, or how we can help you..."
                 ></textarea>
               </div>
-              
+
               <div className="checkbox-group">
                 <label className="checkbox-label">
                   <input
@@ -172,7 +174,7 @@ const ContactUsPage = () => {
                   />
                   <span>I accept the privacy policy *</span>
                 </label>
-                
+
                 <label className="checkbox-label">
                   <input
                     type="checkbox"
@@ -180,64 +182,72 @@ const ContactUsPage = () => {
                     checked={formData.receiveNewsletter}
                     onChange={handleInputChange}
                   />
-                  <span>Receive newsletters containing our latest product offers</span>
+                  <span>
+                    Receive newsletters containing our latest product offers
+                  </span>
                 </label>
               </div>
-              
+
               <button type="submit" className="submit-btn">
                 Send Message
               </button>
             </form>
           </div>
-          
+
           <div className="contact-info-section">
             <h2>Get in Touch</h2>
-            
+
             <div className="contact-details">
               <div className="contact-detail">
                 <h3>Address</h3>
                 <p>
-                  <a 
-                    href="https://www.google.com/maps/search/Riia+tn+142,+50411+Tartu,+Estonia" 
-                    target="_blank" 
+                  <a
+                    href="https://www.google.com/maps/search/Riia+tn+142,+50411+Tartu,+Estonia"
+                    target="_blank"
                     rel="noopener noreferrer"
                   >
-                    Tartupharma Medical Equipments<br />
-                    Riia tn 142<br />
+                    Tartupharma Medical Equipments
+                    <br />
+                    Riia tn 142
+                    <br />
                     50411 Tartu, Estonia
                   </a>
                 </p>
               </div>
-              
+
               <div className="contact-detail">
                 <h3>Phone</h3>
                 <p>
                   <a href="tel:+37271234567">+372 7 123 456</a>
                 </p>
               </div>
-              
+
               <div className="contact-detail">
                 <h3>Email</h3>
                 <p>
-                  <a href="mailto:sales@tartupharma.com">sales@tartupharma.com</a>
+                  <a href="mailto:sales@tartupharma.com">
+                    sales@tartupharma.com
+                  </a>
                 </p>
               </div>
-              
+
               <div className="contact-detail">
                 <h3>Business Hours</h3>
                 <p>
-                  Monday - Friday: 8:00 AM - 6:00 PM<br />
-                  Saturday: 9:00 AM - 2:00 PM<br />
+                  Monday - Friday: 8:00 AM - 6:00 PM
+                  <br />
+                  Saturday: 9:00 AM - 2:00 PM
+                  <br />
                   Sunday: Closed
                 </p>
               </div>
             </div>
-            
+
             <div className="emergency-contact">
               <h3>Emergency Support</h3>
               <p>
-                For urgent technical support or equipment emergencies, 
-                please call our 24/7 hotline:
+                For urgent technical support or equipment emergencies, please
+                call our 24/7 hotline:
               </p>
               <p className="emergency-number">
                 <a href="tel:+37271234567">+372 7 123 456</a>

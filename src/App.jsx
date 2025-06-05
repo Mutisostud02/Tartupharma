@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Routes, Route, useNavigate, useLocation } from "react-router-dom";
 import Header from "./components/Header";
 import Sidebar from "./components/Sidebar";
@@ -10,10 +10,6 @@ import AboutUsPage from "./pages/AboutUsPage";
 import ContactUsPage from "./pages/ContactUsPage";
 import FindUsPage from "./pages/FindUsPage";
 import ProductDetailPage from "./pages/ProductDetailPage";
-import SimplePerformanceMonitor from "./components/SimplePerformanceMonitor";
-import SEOHead from "./components/SEO/SEOHead";
-import StructuredData from "./components/SEO/StructuredData";
-import { getCategoryData } from "./data/products";
 import "./App.css";
 
 function AppContent() {
@@ -24,7 +20,7 @@ function AppContent() {
   );
   const [manufacturerFilter, setManufacturerFilter] = useState(null);
   const [selectedProductId, setSelectedProductId] = useState(null);
-  const [showPerformanceMonitor, setShowPerformanceMonitor] = useState(false);
+  // const [showPerformanceMonitor, setShowPerformanceMonitor] = useState(false);
 
   // Get current page from URL
   const getCurrentPage = () => {
@@ -97,6 +93,8 @@ function AppContent() {
   };
 
   // Get SEO data based on current page
+  // Temporarily disabled
+  /*
   const getSEOData = () => {
     const baseUrl = "https://TartupharmaMedical.co.ke";
 
@@ -179,8 +177,11 @@ function AppContent() {
         };
     }
   };
+  */
 
   // Keyboard shortcut to toggle performance monitor (Ctrl+Shift+P)
+  // Temporarily disabled
+  /*
   useEffect(() => {
     const handleKeyDown = (event) => {
       if (event.ctrlKey && event.shiftKey && event.key === "P") {
@@ -192,14 +193,16 @@ function AppContent() {
     window.addEventListener("keydown", handleKeyDown);
     return () => window.removeEventListener("keydown", handleKeyDown);
   }, []);
+  */
 
-  const seoData = getSEOData();
-  const categoryData =
-    currentPage === "machines" ? getCategoryData(selectedCategory) : null;
+  // const seoData = getSEOData();
+  // const categoryData =
+  //   currentPage === "machines" ? getCategoryData(selectedCategory) : null;
 
   return (
     <div className="App">
-      {/* SEO Components */}
+      {/* SEO Components - Temporarily disabled due to React hooks issue */}
+      {/*
       <SEOHead
         title={seoData.title}
         description={seoData.description}
@@ -211,6 +214,7 @@ function AppContent() {
         category={categoryData}
         product={selectedProductId ? { id: selectedProductId } : null}
       />
+      */}
 
       <Header
         selectedCategory={selectedCategory}
@@ -285,7 +289,8 @@ function AppContent() {
       />
 
       {/* Performance Monitor - Toggle with Ctrl+Shift+P */}
-      <SimplePerformanceMonitor show={showPerformanceMonitor} />
+      {/* Temporarily disabled due to React hooks issue */}
+      {/* <SimplePerformanceMonitor show={showPerformanceMonitor} /> */}
     </div>
   );
 }

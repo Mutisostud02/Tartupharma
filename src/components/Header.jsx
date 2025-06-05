@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Logo from "./Logo";
 import "./Header.css";
 
@@ -9,6 +9,36 @@ const Header = ({
   onPageChange,
   currentPage,
 }) => {
+  const [openDropdown, setOpenDropdown] = useState(null);
+
+  const toggleDropdown = (dropdownName) => {
+    setOpenDropdown(openDropdown === dropdownName ? null : dropdownName);
+  };
+
+  const closeDropdowns = () => {
+    setOpenDropdown(null);
+  };
+
+  // Close dropdowns when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      // Don't close if clicking on dropdown toggle or menu
+      if (
+        event.target.closest(".dropdown-toggle") ||
+        event.target.closest(".dropdown-menu")
+      ) {
+        return;
+      }
+
+      // Close if clicking outside any dropdown
+      if (!event.target.closest(".dropdown")) {
+        closeDropdowns();
+      }
+    };
+
+    document.addEventListener("click", handleClickOutside);
+    return () => document.removeEventListener("click", handleClickOutside);
+  }, []);
   return (
     <header className="header">
       <div className="header-main">
@@ -38,8 +68,15 @@ const Header = ({
                     <span className="nav-text-mobile">Home</span>
                   </button>
                 </li>
-                <li className="nav-item dropdown">
-                  <button className="nav-link dropdown-toggle">
+                <li
+                  className={`nav-item dropdown ${
+                    openDropdown === "machines" ? "open" : ""
+                  }`}
+                >
+                  <button
+                    className="nav-link dropdown-toggle"
+                    onClick={() => toggleDropdown("machines")}
+                  >
                     <span className="nav-icon">⚙️</span>
                     <span className="nav-text-full">Machines</span>
                     <span className="nav-text-mobile">Mach</span>
@@ -47,9 +84,10 @@ const Header = ({
                   </button>
                   <div className="dropdown-menu">
                     <button
-                      onClick={() =>
-                        onCategoryChange("granulators-mills-compactors")
-                      }
+                      onClick={() => {
+                        onCategoryChange("granulators-mills-compactors");
+                        closeDropdowns();
+                      }}
                       className={
                         selectedCategory === "granulators-mills-compactors"
                           ? "active"
@@ -59,9 +97,10 @@ const Header = ({
                       Granulators - Mills - Compactors
                     </button>
                     <button
-                      onClick={() =>
-                        onCategoryChange("mixers-powders-granules")
-                      }
+                      onClick={() => {
+                        onCategoryChange("mixers-powders-granules");
+                        closeDropdowns();
+                      }}
                       className={
                         selectedCategory === "mixers-powders-granules"
                           ? "active"
@@ -71,7 +110,10 @@ const Header = ({
                       Mixers for Powders and Granules
                     </button>
                     <button
-                      onClick={() => onCategoryChange("mixers-liquids-creams")}
+                      onClick={() => {
+                        onCategoryChange("mixers-liquids-creams");
+                        closeDropdowns();
+                      }}
                       className={
                         selectedCategory === "mixers-liquids-creams"
                           ? "active"
@@ -81,7 +123,10 @@ const Header = ({
                       Mixers for Liquids and Creams
                     </button>
                     <button
-                      onClick={() => onCategoryChange("tablet-presses")}
+                      onClick={() => {
+                        onCategoryChange("tablet-presses");
+                        closeDropdowns();
+                      }}
                       className={
                         selectedCategory === "tablet-presses" ? "active" : ""
                       }
@@ -321,39 +366,75 @@ const Header = ({
                     </button>
                   </div>
                 </li>
-                <li className="nav-item dropdown">
-                  <button className="nav-link dropdown-toggle">
+                <li
+                  className={`nav-item dropdown ${
+                    openDropdown === "manufacturers" ? "open" : ""
+                  }`}
+                >
+                  <button
+                    className="nav-link dropdown-toggle"
+                    onClick={() => toggleDropdown("manufacturers")}
+                  >
                     <span className="nav-icon">🏭</span>
                     <span className="nav-text-full">Manufacturers</span>
                     <span className="nav-text-mobile">Mfg</span>
                     <span className="dropdown-arrow">▼</span>
                   </button>
                   <div className="dropdown-menu manufacturers-menu">
-                    <button onClick={() => onManufacturerFilter("QUADRO")}>
+                    <button
+                      onClick={() => {
+                        onManufacturerFilter("QUADRO");
+                        closeDropdowns();
+                      }}
+                    >
                       QUADRO
                     </button>
                     <button
-                      onClick={() => onManufacturerFilter("HOSOKAWA MICRON")}
+                      onClick={() => {
+                        onManufacturerFilter("HOSOKAWA MICRON");
+                        closeDropdowns();
+                      }}
                     >
                       HOSOKAWA MICRON
                     </button>
                     <button
-                      onClick={() => onManufacturerFilter("HOSOKAWA ALPINE")}
+                      onClick={() => {
+                        onManufacturerFilter("HOSOKAWA ALPINE");
+                        closeDropdowns();
+                      }}
                     >
                       HOSOKAWA ALPINE
                     </button>
-                    <button onClick={() => onManufacturerFilter("BECOMIX")}>
+                    <button
+                      onClick={() => {
+                        onManufacturerFilter("BECOMIX");
+                        closeDropdowns();
+                      }}
+                    >
                       BECOMIX
                     </button>
                     <button
-                      onClick={() => onManufacturerFilter("ALEXANDERWERK")}
+                      onClick={() => {
+                        onManufacturerFilter("ALEXANDERWERK");
+                        closeDropdowns();
+                      }}
                     >
                       ALEXANDERWERK
                     </button>
-                    <button onClick={() => onManufacturerFilter("FITZPATRICK")}>
+                    <button
+                      onClick={() => {
+                        onManufacturerFilter("FITZPATRICK");
+                        closeDropdowns();
+                      }}
+                    >
                       FITZPATRICK
                     </button>
-                    <button onClick={() => onManufacturerFilter("FREWITT")}>
+                    <button
+                      onClick={() => {
+                        onManufacturerFilter("FREWITT");
+                        closeDropdowns();
+                      }}
+                    >
                       FREWITT
                     </button>
                     <button onClick={() => onManufacturerFilter("BEPEX")}>

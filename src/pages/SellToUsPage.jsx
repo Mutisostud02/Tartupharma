@@ -1,48 +1,48 @@
-import React, { useState } from 'react';
-import './PageStyles.css';
+import { useState } from "react";
+import "./PageStyles.css";
 
 const SellToUsPage = () => {
   const [formData, setFormData] = useState({
-    firstName: '',
-    lastName: '',
-    email: '',
-    phone: '',
-    location: '',
-    companyName: '',
-    message: '',
+    firstName: "",
+    lastName: "",
+    email: "",
+    phone: "",
+    location: "",
+    companyName: "",
+    message: "",
     acceptPrivacy: false,
-    receiveNewsletter: false
+    receiveNewsletter: false,
   });
 
   const [isSubmitted, setIsSubmitted] = useState(false);
 
   const handleInputChange = (e) => {
     const { name, value, type, checked } = e.target;
-    setFormData(prev => ({
+    setFormData((prev) => ({
       ...prev,
-      [name]: type === 'checkbox' ? checked : value
+      [name]: type === "checkbox" ? checked : value,
     }));
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
     // Here you would typically send the data to your backend
-    console.log('Form submitted:', formData);
+    console.log("Form submitted:", formData);
     setIsSubmitted(true);
-    
+
     // Reset form after 3 seconds
     setTimeout(() => {
       setIsSubmitted(false);
       setFormData({
-        firstName: '',
-        lastName: '',
-        email: '',
-        phone: '',
-        location: '',
-        companyName: '',
-        message: '',
+        firstName: "",
+        lastName: "",
+        email: "",
+        phone: "",
+        location: "",
+        companyName: "",
+        message: "",
         acceptPrivacy: false,
-        receiveNewsletter: false
+        receiveNewsletter: false,
       });
     }, 3000);
   };
@@ -52,7 +52,9 @@ const SellToUsPage = () => {
       <div className="page-container">
         <div className="success-message">
           <h2>Thank you for your request!</h2>
-          <p>We will contact you shortly to discuss your available equipment.</p>
+          <p>
+            We will contact you shortly to discuss your available equipment.
+          </p>
         </div>
       </div>
     );
@@ -63,34 +65,35 @@ const SellToUsPage = () => {
       <div className="page-header">
         <h1>Sell to Us</h1>
       </div>
-      
+
       <div className="page-content">
         <div className="content-section">
           <div className="text-content">
             <p>
-              We are <strong>ALWAYS</strong> interested in buying any well maintained 
-              Pharmaceutical Processing, Production or Packaging Machinery which may be 
-              redundant to your ongoing requirements and available for sale.
+              We are <strong>ALWAYS</strong> interested in buying any well
+              maintained Pharmaceutical Processing, Production or Packaging
+              Machinery which may be redundant to your ongoing requirements and
+              available for sale.
             </p>
-            
+
             <p>
-              Please fill in the form with brief details of any redundant equipment 
-              and include your contact details so we can contact you.
+              Please fill in the form with brief details of any redundant
+              equipment and include your contact details so we can contact you.
             </p>
-            
+
             <div className="contact-alternatives">
               <h3>Alternative Contact Methods:</h3>
               <div className="contact-item">
-                <strong>E-mail:</strong> 
+                <strong>E-mail:</strong>
                 <a href="mailto:sales@tartupharma.com">sales@tartupharma.com</a>
               </div>
               <div className="contact-item">
-                <strong>Tel.:</strong> 
+                <strong>Tel.:</strong>
                 <a href="tel:+37271234567">+372 7 123 456</a>
               </div>
             </div>
           </div>
-          
+
           <div className="form-section">
             <form onSubmit={handleSubmit} className="contact-form">
               <div className="form-row">
@@ -116,7 +119,7 @@ const SellToUsPage = () => {
                   />
                 </div>
               </div>
-              
+
               <div className="form-row">
                 <div className="form-group">
                   <label htmlFor="email">Email *</label>
@@ -141,7 +144,7 @@ const SellToUsPage = () => {
                   />
                 </div>
               </div>
-              
+
               <div className="form-row">
                 <div className="form-group">
                   <label htmlFor="location">Location</label>
@@ -165,7 +168,7 @@ const SellToUsPage = () => {
                   />
                 </div>
               </div>
-              
+
               <div className="form-group full-width">
                 <label htmlFor="message">Equipment Details</label>
                 <textarea
@@ -177,7 +180,7 @@ const SellToUsPage = () => {
                   placeholder="Please describe the equipment you wish to sell, including manufacturer, model, year, condition, and any other relevant details..."
                 ></textarea>
               </div>
-              
+
               <div className="checkbox-group">
                 <label className="checkbox-label">
                   <input
@@ -189,7 +192,7 @@ const SellToUsPage = () => {
                   />
                   <span>I accept the privacy policy *</span>
                 </label>
-                
+
                 <label className="checkbox-label">
                   <input
                     type="checkbox"
@@ -197,10 +200,12 @@ const SellToUsPage = () => {
                     checked={formData.receiveNewsletter}
                     onChange={handleInputChange}
                   />
-                  <span>Receive newsletters containing our latest product offers</span>
+                  <span>
+                    Receive newsletters containing our latest product offers
+                  </span>
                 </label>
               </div>
-              
+
               <button type="submit" className="submit-btn">
                 Submit Equipment Details
               </button>

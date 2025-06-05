@@ -5,14 +5,12 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   build: {
-    // Enable code splitting for better caching
+    // Enable code splitting
     rollupOptions: {
       output: {
         manualChunks: {
           // Vendor chunk for third-party libraries
-          vendor: ['react', 'react-dom'],
-          // Utils chunk for utility functions
-          utils: ['./src/utils/cache.js', './src/hooks/useCache.js']
+          vendor: ['react', 'react-dom']
         }
       }
     },
@@ -22,19 +20,14 @@ export default defineConfig({
     chunkSizeWarningLimit: 1000
   },
   server: {
-    // Enable HTTP/2 for better performance
+    // Development server settings
+    host: '0.0.0.0', // Allow external connections
+    port: 5174,      // Fixed port for consistency
     https: false,
-    // Enable compression
-    compress: true,
-    // Set cache headers for static assets
-    headers: {
-      'Cache-Control': 'public, max-age=31536000'
-    }
+    compress: true
   },
   // Optimize dependencies
   optimizeDeps: {
-    include: ['react', 'react-dom'],
-    // Force pre-bundling of these dependencies
-    force: true
+    include: ['react', 'react-dom']
   }
 })

@@ -1,4 +1,4 @@
-import React from "react";
+// React import removed - not needed in modern React
 import { getAllProducts } from "../data/products";
 import ProductCard from "../components/ProductCard";
 import "./HomePage.css";

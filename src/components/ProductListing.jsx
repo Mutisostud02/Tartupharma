@@ -1,7 +1,6 @@
-import React, { useState, useMemo, useEffect } from "react";
+import { useState, useMemo, useEffect } from "react";
 import ProductCard from "./ProductCard";
 import { getCategoryData, getProductsByManufacturer } from "../data/products";
-import { useImagePreload } from "../hooks/useCache";
 import "./ProductListing.css";
 
 const ProductListing = ({
@@ -43,13 +42,7 @@ const ProductListing = ({
     return uniqueTypes.sort();
   }, [allProducts]);
 
-  // Preload product images for better performance
-  const productImages = useMemo(
-    () => allProducts.map((product) => product.image),
-    [allProducts]
-  );
-
-  const { loadedImages } = useImagePreload(productImages);
+  // Image preloading removed with cache system
 
   // Filter and sort products
   const filteredAndSortedProducts = useMemo(() => {
