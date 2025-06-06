@@ -365,7 +365,7 @@ export const categories = {
         manufacturer: 'FETTE',
         model: 'PT 3090',
         type: 'Rotary Tablet Press',
-        image: '/images/placeholder-machine.svg'
+        image: '/images/large-used-f-16339-d-rotary-tablet-press-27-stations-eu-45-40-fette-pt-3090.jpg?v=1'
       },
       {
         id: 'F16380E',
@@ -373,7 +373,7 @@ export const categories = {
         manufacturer: 'RIVA',
         model: 'MINIPRESS MII',
         type: 'Excenter Tablet Press',
-        image: '/images/placeholder-machine.svg'
+        image: '/images/large-used-f-16380-e-excenter-tablet-press-riva-minipress-mii-1-station.jpg?v=1'
       },
       {
         id: 'F16381E',
@@ -381,7 +381,7 @@ export const categories = {
         manufacturer: 'RIVA',
         model: 'PICCOLA B10',
         type: 'Tablet Press',
-        image: '/images/placeholder-machine.svg'
+        image: '/images/large-used-f-16381-e-tablet-press-riva-piccola-b10-10-stations.jpg?v=1'
       },
       {
         id: 'F16386D',
@@ -389,7 +389,7 @@ export const categories = {
         manufacturer: 'RIVA',
         model: 'Piccola D-C',
         type: 'Rotary Tablet Press',
-        image: '/images/placeholder-machine.svg'
+        image: '/images/large-used-f-16386-d-rotary-tablet-press-8-stations-riva-piccola-d-c.jpg?v=1'
       },
       {
         id: 'F16491E',
@@ -397,7 +397,7 @@ export const categories = {
         manufacturer: 'KORSCH',
         model: 'PH 230/14',
         type: 'Tablet Press',
-        image: '/images/placeholder-machine.svg'
+        image: '/images/large-used-f-16491-e-tablet-press-korsch-ph-230-14-14-stations-eu-d.jpg?v=1'
       },
       {
         id: 'F16581D',
@@ -405,7 +405,7 @@ export const categories = {
         manufacturer: 'KORSCH',
         model: 'XL 100 EU D',
         type: 'Rotary Tablet Press',
-        image: '/images/placeholder-machine.svg'
+        image: '/images/large-used-f-16581-d-rotary-tablet-press-8-stations-korsch-xl-100-eu-d-pma-3.jpg?v=1'
       },
       {
         id: 'F16590D',
@@ -413,7 +413,7 @@ export const categories = {
         manufacturer: 'FETTE',
         model: 'P 2090 47',
         type: 'Stamp matrice slice',
-        image: '/images/placeholder-machine.svg'
+        image: '/images/large-used-f-16591-d-stamp-matrice-slice-eu-19-bb-fette-p-2090-47.jpg?v=1'
       },
       {
         id: 'F16591D',
@@ -421,7 +421,7 @@ export const categories = {
         manufacturer: 'FETTE',
         model: 'P 2090 47',
         type: 'Stamp matrice slice',
-        image: '/images/placeholder-machine.svg'
+        image: '/images/large-used-f-16590-d-stamp-matrice-slice-eu-19-bb-fette-p-2090-47.jpg?v=1'
       },
 
       {
@@ -430,7 +430,7 @@ export const categories = {
         manufacturer: 'FETTE',
         model: 'P 3000',
         type: 'Tablet Press',
-        image: '/images/placeholder-machine.svg'
+        image: '/images/large-1710.jpg?v=1'
       },
       {
         id: 'F12228D',
@@ -438,7 +438,7 @@ export const categories = {
         manufacturer: 'KILIAN',
         model: 'T 300',
         type: 'Turret',
-        image: '/images/placeholder-machine.svg'
+        image: '/images/large-1713.jpg?v=1'
       },
       {
         id: 'F12304D',
@@ -446,7 +446,7 @@ export const categories = {
         manufacturer: 'KILIAN',
         model: 'S 700',
         type: 'Turret',
-        image: '/images/placeholder-machine.svg'
+        image: '/images/large-1666.jpg?v=1'
       },
       {
         id: 'F12657D',
@@ -454,7 +454,7 @@ export const categories = {
         manufacturer: 'KORSCH',
         model: 'PH 230',
         type: 'Tablet Press',
-        image: '/images/placeholder-machine.svg'
+        image: '/images/large-1783.jpg?v=1'
       },
       {
         id: 'F15133D',
@@ -462,7 +462,7 @@ export const categories = {
         manufacturer: 'FETTE',
         model: 'P 2200',
         type: 'Tablet Press',
-        image: '/images/placeholder-machine.svg'
+        image: '/images/large-used-f-15133-d-fette-p-2200-tablet-press-eu-1-441-29-stations.jpg?v=1'
       },
       {
         id: 'F15759D',
@@ -470,7 +470,7 @@ export const categories = {
         manufacturer: 'IMA KILIAN',
         model: 'SYNTHESIS 500',
         type: 'Tablet Press',
-        image: '/images/placeholder-machine.svg'
+        image: '/images/large-used-f-15759-d-ima-kilian-synthesis-500-tablet-press-eu-bb-45-stations.jpg?v=1'
       },
       {
         id: 'F15766D',
@@ -478,7 +478,7 @@ export const categories = {
         manufacturer: 'FETTE',
         model: 'P 1200 iC',
         type: 'Rotary Tablet Press',
-        image: '/images/placeholder-machine.svg'
+        image: '/images/large-used-f-15766-d-fette-p-1200-i-c-rotary-tablet-press-eu-d-20-stations.jpg?v=1'
       },
       {
         id: 'F15889E',
@@ -486,7 +486,7 @@ export const categories = {
         manufacturer: 'MANESTY',
         model: 'B4',
         type: 'Tablet Press',
-        image: '/images/placeholder-machine.svg'
+        image: '/images/large-used-f-15889-e-tablet-press-manesty-b4-25-stations.jpg?v=1'
       },
       {
         id: 'F15890E',
@@ -494,7 +494,7 @@ export const categories = {
         manufacturer: 'MANESTY',
         model: 'D4',
         type: 'Tablet Press',
-        image: '/images/placeholder-machine.svg'
+        image: '/images/large-used-f-15890-e-tablet-press-manesty-d4-20-stations.jpg?v=1'
       },
       {
         id: 'F15911E',
@@ -502,7 +502,7 @@ export const categories = {
         manufacturer: 'KILIAN',
         model: 'TX 44 AM',
         type: 'Tablet Press',
-        image: '/images/placeholder-machine.svg'
+        image: '/images/large-used-f-15911-e-tablet-press-kilian-tx-44-am-44-stations.jpg?v=1'
       },
       {
         id: 'F15996D',
@@ -510,7 +510,7 @@ export const categories = {
         manufacturer: 'FETTE',
         model: 'P 2100',
         type: 'Tablet Press',
-        image: '/images/placeholder-machine.svg'
+        image: '/images/large-used-f-15996-d-fette-p-2100-tablet-press-eu-bbs-47-stations.jpg?v=1'
       },
       {
         id: 'F16076D',
@@ -518,7 +518,7 @@ export const categories = {
         manufacturer: 'FETTE',
         model: 'P 2100 EC',
         type: 'Tablet Press',
-        image: '/images/placeholder-machine.svg'
+        image: '/images/large-used-f-16076-d-rotary-tablet-press-eu-d-29-stations-fette-p-2100-ec.jpg?v=1'
       },
       {
         id: 'F16107D',
@@ -526,7 +526,7 @@ export const categories = {
         manufacturer: 'HOSOKAWA ALPINE',
         model: 'K 200 / 100',
         type: 'Pharmapactor',
-        image: '/images/placeholder-machine.svg'
+        image: '/images/large-used-f-16107-d-pharmapactor-hosokawa-alpine-typ-k-200-100.jpg?v=1'
       }
     ]
   },
