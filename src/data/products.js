@@ -181,7 +181,7 @@ export const categories = {
         manufacturer: 'LLEAL',
         model: 'B-250-CA PHARMA',
         type: 'V-Cone Blender',
-        image: '/images/placeholder-machine.svg'
+        image: '/images/v-cone-blender-lleal-B-250-ca-pharma.jpg?v=1'
       },
       {
         id: 'A15697E',
@@ -189,7 +189,7 @@ export const categories = {
         manufacturer: 'ERWEKA',
         model: 'AR402',
         type: 'Multi Purpose Drive',
-        image: '/images/placeholder-machine.svg'
+        image: '/images/multi-purpose-drive-erweka-ar-402-with-dke-coating-pan-kb-20-s-mixing-cube.jpg?v=1'
       },
       {
         id: 'A15907E',
@@ -197,7 +197,7 @@ export const categories = {
         manufacturer: 'GLATT',
         model: 'VG 65/10',
         type: 'Mixer / Granulator',
-        image: '/images/placeholder-machine.svg'
+        image: '/images/mixer-granulator-glatt-vg-65-10-vertical-lab-granulator.jpg?v=1'
       },
       {
         id: 'A15909E',
@@ -205,7 +205,7 @@ export const categories = {
         manufacturer: 'AEROMATIC-FIELDER',
         model: 'PMA 10/2GI',
         type: 'Mixer / Granulator',
-        image: '/images/placeholder-machine.svg'
+        image: '/images/mixer-granulator-aeromatic-fielder-pma-10-2-gi.jpg?v=1'
       },
       {
         id: 'A16040D',
@@ -213,7 +213,7 @@ export const categories = {
         manufacturer: 'MÜLLER FÖRDERTECHNIK',
         model: 'FTMH 300 MG1',
         type: 'Drum Blender',
-        image: '/images/placeholder-machine.svg'
+        image: '/images/m-ue-ller-f-oe-rdertechnik-ftmh-300-mg-1-drum-mixer-for-drums.jpg?v=1'
       },
       {
         id: 'A16462D',
@@ -221,7 +221,7 @@ export const categories = {
         manufacturer: 'STEPHAN',
         model: 'UMC 55',
         type: 'Universal Blender',
-        image: '/images/placeholder-machine.svg'
+        image: '/images/stephan-umc-55-universal-blender.jpg?v=1'
       },
       {
         id: 'A16541D',
@@ -229,7 +229,7 @@ export const categories = {
         manufacturer: 'LÖDIGE',
         model: 'MGT 600 P - 1MZ',
         type: 'Mixer / Granulator',
-        image: '/images/placeholder-machine.svg'
+        image: '/images/mixer-granulator-l-oe-dige-mgt-600-p-1-mz.jpg?v=1'
       },
       {
         id: 'A16559D',
@@ -237,7 +237,7 @@ export const categories = {
         manufacturer: 'ENGELSMANN',
         model: 'SA 1200 VA',
         type: 'Drum Blender',
-        image: '/images/placeholder-machine.svg'
+        image: '/images/drum-blender-with-safety-housing-engelsmann-sa-1200-va.jpg?v=1'
       }
     ]
   },
@@ -249,99 +249,99 @@ export const categories = {
     products: [
       {
         id: 'B11297D',
-        name: 'Mixer / Granulator COLLETTE GRAL 10',
-        manufacturer: 'COLLETTE',
-        model: 'GRAL 10',
-        type: 'Mixer / Granulator',
-        image: '/images/placeholder-machine.svg'
+        name: 'Mixer JANKE+KUNKEL ULTRA TURRAX T 50 DPX',
+        manufacturer: 'JANKE+KUNKEL',
+        model: 'ULTRA TURRAX T 50 DPX',
+        type: 'Mixer',
+        image: '/images/large-1244.jpg?v=1'
       },
       {
         id: 'B14180D',
-        name: 'Mixer / Granulator COLLETTE GRAL 75',
-        manufacturer: 'COLLETTE',
-        model: 'GRAL 75',
-        type: 'Mixer / Granulator',
-        image: '/images/placeholder-machine.svg'
+        name: 'Disperser IKA LABOR UTL T60/4-P-ATEX',
+        manufacturer: 'IKA LABOR',
+        model: 'UTL T60/4-P-ATEX',
+        type: 'Disperser',
+        image: '/images/large-2103.jpg?v=1'
       },
       {
         id: 'B14181D',
-        name: 'Mixer / Granulator COLLETTE GRAL 75',
-        manufacturer: 'COLLETTE',
-        model: 'GRAL 75',
-        type: 'Mixer / Granulator',
-        image: '/images/placeholder-machine.svg'
+        name: 'Disperser IKA LABOR UTL T60/4-P-ATEX',
+        manufacturer: 'IKA LABOR',
+        model: 'UTL T60/4-P-ATEX',
+        type: 'Disperser',
+        image: '/images/large-2104.jpg?v=1'
       },
       {
         id: 'B15101E',
-        name: 'Lab Cream Manufacturing Plant ESCO-LABOR EL-1',
-        manufacturer: 'ESCO-LABOR',
+        name: 'Lab Cream Manufacturing Plant ESCO LABOR EL-1',
+        manufacturer: 'ESCO LABOR',
         model: 'EL-1',
         type: 'Lab Cream Manufacturing Plant',
-        image: '/images/placeholder-machine.svg'
+        image: '/images/lab-cream-manufacturing-plant-esco-labor-el-1.jpg?v=1'
       },
       {
         id: 'B15286D',
-        name: 'Mixer / Granulator COLLETTE GRAL 150',
-        manufacturer: 'COLLETTE',
-        model: 'GRAL 150',
-        type: 'Mixer / Granulator',
-        image: '/images/placeholder-machine.svg'
+        name: 'Melting and Mixing Plant VAKUMIX ABF 275',
+        manufacturer: 'VAKUMIX',
+        model: 'ABF 275',
+        type: 'Melting and Mixing Plant',
+        image: '/images/melting-and-mixing-plant-vakumix-abf-275.jpg?v=1'
       },
       {
         id: 'B15626D',
-        name: 'Mixer / Granulator COLLETTE GRAL 300',
-        manufacturer: 'COLLETTE',
-        model: 'GRAL 300',
-        type: 'Mixer / Granulator',
-        image: '/images/placeholder-machine.svg'
+        name: 'Melting and Mixing Plant VAKUMIX ABF 35',
+        manufacturer: 'VAKUMIX',
+        model: 'ABF 35',
+        type: 'Melting and Mixing Plant',
+        image: '/images/melting-and-mixing-plant-vakumix-abf-35.jpg?v=1'
       },
       {
         id: 'B15719D',
-        name: 'Mixer / Granulator COLLETTE GRAL 600',
-        manufacturer: 'COLLETTE',
-        model: 'GRAL 600',
-        type: 'Mixer / Granulator',
-        image: '/images/placeholder-machine.svg'
+        name: 'Cream Manufacturing Plant FRYMA VME 400',
+        manufacturer: 'FRYMA',
+        model: 'VME 400',
+        type: 'Cream Manufacturing Plant',
+        image: '/images/cream-manufacturing-plant-fryma-vme-400.jpg?v=1'
       },
       {
         id: 'B15720D',
-        name: 'Mixer / Granulator COLLETTE GRAL 600',
-        manufacturer: 'COLLETTE',
-        model: 'GRAL 600',
-        type: 'Mixer / Granulator',
-        image: '/images/placeholder-machine.svg'
+        name: 'Cream Manufacturing Plant FRYMA VME 400',
+        manufacturer: 'FRYMA',
+        model: 'VME 400',
+        type: 'Cream Manufacturing Plant',
+        image: '/images/large-used-fryma-koruma.jpg?v=1'
       },
       {
         id: 'B15836D',
-        name: 'Mixer / Granulator COLLETTE GRAL 1200',
-        manufacturer: 'COLLETTE',
-        model: 'GRAL 1200',
-        type: 'Mixer / Granulator',
-        image: '/images/placeholder-machine.svg'
+        name: 'Cream Manufacturing Plant Fryma type VME 20',
+        manufacturer: 'FRYMA',
+        model: 'VME 20',
+        type: 'Cream Manufacturing Plant',
+        image: '/images/large-used-b-15836-d-cream-manufacturing-plant-fryma-type-vme-20.jpg?v=1'
       },
       {
         id: 'B15883D',
-        name: 'Mixer / Granulator COLLETTE GRAL 1200',
-        manufacturer: 'COLLETTE',
-        model: 'GRAL 1200',
-        type: 'Mixer / Granulator',
-        image: '/images/placeholder-machine.svg'
+        name: 'Cream Manufacturing Plant AK HYDRO GRIND',
+        manufacturer: 'AK',
+        model: 'HYDRO GRIND',
+        type: 'Cream Manufacturing Plant',
+        image: '/images/large-used-b-15883-d-cream-manufacturing-plant-ak-hydro-grind.jpg?v=1'
       },
       {
         id: 'B16367D',
-        name: 'Mixer / Granulator COLLETTE GRAL 25',
-        manufacturer: 'COLLETTE',
-        model: 'GRAL 25',
-        type: 'Mixer / Granulator',
-        image: '/images/placeholder-machine.svg'
+        name: 'Disperser / colloid mill IKA PROCESS PILOT MK 2000/4',
+        manufacturer: 'IKA PROCESS',
+        model: 'PILOT MK 2000/4',
+        type: 'Disperser / colloid mill',
+        image: '/images/large-used-c-16367-d-ika-process-pilot-mk-2000-4-disperser-colloid-mill.jpg?v=1'
       },
       {
         id: 'B16463D',
-        name: 'Mixer / Granulator COLLETTE GRAL 25',
-        manufacturer: 'COLLETTE',
-        model: 'GRAL 25',
-        type: 'Mixer / Granulator',
-        image: '/images/placeholder-machine.svg'
+        name: 'Cream Manufacturing Plant FRYMA MZM / VK - 50',
+        manufacturer: 'FRYMA',
+        model: 'MZM / VK - 50',
+        type: 'Cream Manufacturing Plant',
+        image: '/images/large-used-b-16463-d-fryma-mzm-vk-50-cream-manufacturing-plant.jpg?v=1'
       },
       {
         id: 'B16498E',
@@ -349,7 +349,7 @@ export const categories = {
         manufacturer: 'SILVERSON',
         model: 'L4RT',
         type: 'High-Shear Mixer',
-        image: '/images/placeholder-machine.svg'
+        image: '/images/large-used-w-16498-e-high-shear-mixer-silverson-l4-rt-laboratory-scale.jpg?v=1'
       }
     ]
   },
