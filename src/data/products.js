@@ -4,7 +4,7 @@
 export const categories = {
   "granulators-mills-compactors": {
     title: "GRANULATORS - MILLS - COMPACTORS",
-    count: 14,
+    count: 13,
     description: "Come check out our large selection of Granulators - Mills - Compactors for sale.",
     products: [
       {
@@ -13,7 +13,7 @@ export const categories = {
         manufacturer: 'QUADRO',
         model: '197 S Comil',
         type: 'Cone Mill',
-        image: '/images/large-2356.jpg?v=1'
+        image: '/images/large-cone-mill-197S.jpg?v=1'
       },
       {
         id: 'C15768D',
@@ -53,7 +53,7 @@ export const categories = {
         manufacturer: 'BECOMIX',
         model: 'DH 500',
         type: 'Continuous homogenizer',
-        image: '/images/becomix-dh-500.jpg?v=1'
+        image: '/images/becomix-dh-500-continuous-homogenizer.jpg?v=1'
       },
       {
         id: 'C16332D',
@@ -69,7 +69,7 @@ export const categories = {
         manufacturer: 'FITZPATRICK',
         model: 'Fitz Mill DA 06',
         type: 'Hammer / knife mill',
-        image: '/images/fitzprick-fitz-mill-da-06.jpg?v=1'
+        image: '/images/fitzpatrick-fitz-mill-da-06-hammer-knife-mill.jpg?v=1'
       },
       {
         id: 'C16372E',
@@ -77,7 +77,7 @@ export const categories = {
         manufacturer: 'FREWITT',
         model: 'MF-6',
         type: 'Vacuum Granulation System',
-        image: '/images/vacuum-granulation-system-frewitt-mf-6.jpg?v=1'
+        image: '/images/vacuum-granulation-system-frewitt-mf-6-cosmec-volkmann-atex.jpg?v=1'
       },
       {
         id: 'C16403D',
@@ -85,7 +85,7 @@ export const categories = {
         manufacturer: 'ALEXANDERWERK',
         model: 'SKM/RAN 70',
         type: 'Shredder',
-        image: '/images/alexanderwerk-skm-ran-70.jpg?v=1'
+        image: '/images/alexanderwerk-skm-ran-70-shredder.jpg?v=1'
       },
       {
         id: 'C16511D',
@@ -101,7 +101,7 @@ export const categories = {
         manufacturer: 'BEPEX',
         model: 'L 200/50 P',
         type: 'Pharmapactor',
-        image: '/images/pharmapactor-bepeex-l-200-50-p.jpg?v=1'
+        image: '/images/pharmapactor-bepex-l-200-50-p.jpg?v=1'
       },
       {
         id: 'C16535D',
@@ -120,20 +120,12 @@ export const categories = {
         image: '/images/large-used-c-16627-e-cone-mill-quadro-194-s-comil.jpg?v=2'
       },
       {
-        id: 'C16701D',
-        name: 'Granulator FREWITT MG 55',
-        manufacturer: 'FREWITT',
-        model: 'MG 55',
-        type: 'Granulator',
-        image: '/images/placeholder-machine.svg'
-      },
-      {
         id: 'C16702D',
         name: 'Cone Mill QUADRO COMIL 197',
         manufacturer: 'QUADRO',
         model: 'COMIL 197',
         type: 'Cone Mill',
-        image: '/images/placeholder-machine.svg'
+        image: '/images/large-cone-mill-197S.jpg?v=1'
       },
       {
         id: 'C16703D',
@@ -141,7 +133,7 @@ export const categories = {
         manufacturer: 'FITZPATRICK',
         model: 'L1A',
         type: 'Hammer Mill',
-        image: '/images/placeholder-machine.svg'
+        image: '/images/Hammer-Mill-FITZPATRICK-Model-L1A.jpeg?v=1'
       },
       {
         id: 'C16704D',
@@ -149,7 +141,7 @@ export const categories = {
         manufacturer: 'ALEXANDERWERK',
         model: 'WP 120',
         type: 'Granulator',
-        image: '/images/placeholder-machine.svg'
+        image: '/images/alexanderwerk-wp120.jpeg?v=1'
       },
       {
         id: 'C16705D',
@@ -157,14 +149,14 @@ export const categories = {
         manufacturer: 'RUSSELL FINEX',
         model: 'Compact Sieve',
         type: 'Sifter',
-        image: '/images/placeholder-machine.svg'
+        image: '/images/ Sifter-russel-finex.jpeg?v=1'
       }
     ]
   },
   
   "mixers-powders-granules": {
     title: "MIXERS FOR POWDERS AND GRANULES",
-    count: 3,
+    count: 10,
     description: "Explore our comprehensive range of mixers designed for powders and granules.",
     products: [
       {
@@ -173,7 +165,7 @@ export const categories = {
         manufacturer: 'COLLETTE',
         model: 'GRAL 25',
         type: 'Mixer / Granulator',
-        image: '/images/placeholder-machine.svg'
+        image: '/images/mixer-granulator-collette-gral-25.jpg?v=1'
       },
       {
         id: 'A14765D',
@@ -181,7 +173,7 @@ export const categories = {
         manufacturer: 'FIELDER',
         model: 'PMA 600 UPGRADE',
         type: 'Mixer / Granulator',
-        image: '/images/placeholder-machine.svg'
+        image: '/images/mixer-granulator-fielder-pma-600-upgrade-mixcontrol.jpg?v=1'
       },
       {
         id: 'A15502E',
@@ -189,6 +181,62 @@ export const categories = {
         manufacturer: 'LLEAL',
         model: 'B-250-CA PHARMA',
         type: 'V-Cone Blender',
+        image: '/images/placeholder-machine.svg'
+      },
+      {
+        id: 'A15697E',
+        name: 'Multi Purpose Drive ERWEKA AR402 with DKE Coating Pan + KB20S Mixing Cube',
+        manufacturer: 'ERWEKA',
+        model: 'AR402',
+        type: 'Multi Purpose Drive',
+        image: '/images/placeholder-machine.svg'
+      },
+      {
+        id: 'A15907E',
+        name: 'Mixer / Granulator GLATT VG 65/10 Vertical Lab Granulator',
+        manufacturer: 'GLATT',
+        model: 'VG 65/10',
+        type: 'Mixer / Granulator',
+        image: '/images/placeholder-machine.svg'
+      },
+      {
+        id: 'A15909E',
+        name: 'Mixer / Granulator Aeromatic-Fielder PMA 10/2GI',
+        manufacturer: 'AEROMATIC-FIELDER',
+        model: 'PMA 10/2GI',
+        type: 'Mixer / Granulator',
+        image: '/images/placeholder-machine.svg'
+      },
+      {
+        id: 'A16040D',
+        name: 'Drum Blender MÜLLER FÖRDERTECHNIK FTMH 300 MG1',
+        manufacturer: 'MÜLLER FÖRDERTECHNIK',
+        model: 'FTMH 300 MG1',
+        type: 'Drum Blender',
+        image: '/images/placeholder-machine.svg'
+      },
+      {
+        id: 'A16462D',
+        name: 'Universal Blender STEPHAN UMC 55',
+        manufacturer: 'STEPHAN',
+        model: 'UMC 55',
+        type: 'Universal Blender',
+        image: '/images/placeholder-machine.svg'
+      },
+      {
+        id: 'A16541D',
+        name: 'Mixer / Granulator LÖDIGE MGT 600 P - 1MZ',
+        manufacturer: 'LÖDIGE',
+        model: 'MGT 600 P - 1MZ',
+        type: 'Mixer / Granulator',
+        image: '/images/placeholder-machine.svg'
+      },
+      {
+        id: 'A16559D',
+        name: 'Drum Blender with safety housing ENGELSMANN SA 1200 VA',
+        manufacturer: 'ENGELSMANN',
+        model: 'SA 1200 VA',
+        type: 'Drum Blender',
         image: '/images/placeholder-machine.svg'
       }
     ]
