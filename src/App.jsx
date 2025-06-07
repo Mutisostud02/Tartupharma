@@ -96,7 +96,7 @@ function AppContent() {
   // Temporarily disabled
   /*
   const getSEOData = () => {
-    const baseUrl = "https://TartupharmaMedical.co.ke";
+    const baseUrl = "https://tartupharmamedics.com";
 
     switch (currentPage) {
       case "home":

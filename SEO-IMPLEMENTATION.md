@@ -1,11 +1,13 @@
 # SEO Implementation for Tartupharma Medical Equipments
 
 ## Overview
-This document outlines the comprehensive SEO implementation for the Tartupharma Medical Equipments website (https://TartupharmaMedical.co.ke).
+
+This document outlines the comprehensive SEO implementation for the Tartupharma Medical Equipments website (https://tartupharmamedics.com).
 
 ## 🎯 SEO Features Implemented
 
 ### 1. Meta Tags & HTML Head Optimization
+
 - **Dynamic page titles** based on current page/category
 - **Meta descriptions** optimized for each page
 - **Keywords meta tags** with relevant pharmaceutical equipment terms
@@ -14,12 +16,14 @@ This document outlines the comprehensive SEO implementation for the Tartupharma 
 - **Language and author meta tags**
 
 ### 2. Open Graph & Social Media
+
 - **Open Graph tags** for Facebook sharing
 - **Twitter Card tags** for Twitter sharing
 - **Social media images** (1200x630 for OG, 1200x600 for Twitter)
 - **Proper og:type, og:locale, og:site_name** tags
 
 ### 3. Structured Data (JSON-LD)
+
 - **Organization schema** with complete business information
 - **Website schema** with search functionality
 - **Product schema** for individual equipment pages
@@ -27,12 +31,14 @@ This document outlines the comprehensive SEO implementation for the Tartupharma 
 - **Breadcrumb schema** for navigation structure
 
 ### 4. XML Sitemaps
+
 - **Main sitemap** (`/sitemap.xml`) with all pages
 - **Products sitemap** (`/sitemap-products.xml`) for equipment listings
 - **Image sitemaps** included for better image indexing
 - **Proper priority and changefreq** settings
 
 ### 5. Technical SEO
+
 - **Robots.txt** file with proper directives
 - **Web manifest** for PWA features
 - **Favicon suite** (16x16, 32x32, Apple touch icon)
@@ -40,6 +46,7 @@ This document outlines the comprehensive SEO implementation for the Tartupharma 
 - **Google Analytics** integration ready
 
 ### 6. Performance Optimization
+
 - **Preconnect** to external resources
 - **DNS prefetch** for faster loading
 - **Optimized images** with proper alt tags
@@ -72,15 +79,16 @@ src/components/SEO/
 ## 🔧 Implementation Details
 
 ### Dynamic SEO Component Usage
+
 ```jsx
 // In App.jsx
-<SEOHead 
+<SEOHead
   title={seoData.title}
   description={seoData.description}
   keywords={seoData.keywords}
   canonical={seoData.canonical}
 />
-<StructuredData 
+<StructuredData
   page={currentPage}
   category={categoryData}
   product={selectedProductId ? { id: selectedProductId } : null}
@@ -88,6 +96,7 @@ src/components/SEO/
 ```
 
 ### Page-Specific SEO Data
+
 - **Home Page**: General pharmaceutical equipment keywords
 - **Category Pages**: Specific equipment type optimization
 - **Product Pages**: Individual product optimization
@@ -96,6 +105,7 @@ src/components/SEO/
 ## 🎯 Target Keywords
 
 ### Primary Keywords
+
 - pharmaceutical equipment Kenya
 - medical machinery Kenya
 - tablet presses Kenya
@@ -103,6 +113,7 @@ src/components/SEO/
 - capsule filling machines Kenya
 
 ### Secondary Keywords
+
 - pharmaceutical manufacturing equipment
 - medical equipment supplier Kenya
 - pharmaceutical machinery
@@ -110,6 +121,7 @@ src/components/SEO/
 - pharmaceutical processing equipment
 
 ### Long-tail Keywords
+
 - pharmaceutical equipment supplier in Kenya
 - medical machinery for pharmaceutical manufacturing
 - tablet press machines Kenya
@@ -119,12 +131,14 @@ src/components/SEO/
 ## 📊 SEO Monitoring & Analytics
 
 ### Google Analytics Setup
+
 ```javascript
 // Replace GA_MEASUREMENT_ID with actual Google Analytics ID
-gtag('config', 'GA_MEASUREMENT_ID');
+gtag("config", "GA_MEASUREMENT_ID");
 ```
 
 ### Key Metrics to Track
+
 - Organic search traffic
 - Keyword rankings
 - Page load speed
@@ -134,24 +148,28 @@ gtag('config', 'GA_MEASUREMENT_ID');
 ## 🚀 Next Steps for Production
 
 ### 1. Replace Placeholder Content
+
 - [ ] Replace `GA_MEASUREMENT_ID` with actual Google Analytics ID
 - [ ] Create actual logo images (PNG/ICO formats)
 - [ ] Generate real favicon files
 - [ ] Create optimized social media images
 
 ### 2. Content Optimization
+
 - [ ] Add more detailed product descriptions
 - [ ] Create category-specific landing pages
 - [ ] Add customer testimonials and reviews
 - [ ] Implement blog section for content marketing
 
 ### 3. Technical Improvements
+
 - [ ] Set up Google Search Console
 - [ ] Implement schema markup testing
 - [ ] Add hreflang tags for international SEO
 - [ ] Set up XML sitemap auto-generation
 
 ### 4. Local SEO (Kenya Focus)
+
 - [ ] Add Google My Business listing
 - [ ] Implement local business schema
 - [ ] Add location-specific keywords
@@ -160,12 +178,14 @@ gtag('config', 'GA_MEASUREMENT_ID');
 ## 📱 Mobile & Performance SEO
 
 ### Mobile Optimization
+
 - Responsive design implemented
 - Mobile-friendly navigation
 - Touch-optimized buttons
 - Fast mobile loading
 
 ### Core Web Vitals
+
 - Optimized images with proper sizing
 - Efficient CSS and JavaScript loading
 - Minimal layout shifts
@@ -174,12 +194,15 @@ gtag('config', 'GA_MEASUREMENT_ID');
 ## 🔍 Search Engine Submission
 
 ### Submit to Search Engines
+
 1. **Google Search Console**
+
    - Submit sitemap.xml
    - Submit sitemap-products.xml
    - Monitor indexing status
 
 2. **Bing Webmaster Tools**
+
    - Submit sitemaps
    - Monitor performance
 
@@ -191,16 +214,19 @@ gtag('config', 'GA_MEASUREMENT_ID');
 ## 📈 Expected SEO Benefits
 
 ### Improved Rankings
+
 - Better visibility for pharmaceutical equipment searches
 - Higher rankings for Kenya-specific queries
 - Enhanced local search presence
 
 ### Enhanced User Experience
+
 - Faster page loading
 - Better mobile experience
 - Improved navigation structure
 
 ### Social Media Integration
+
 - Better social sharing appearance
 - Increased social media engagement
 - Enhanced brand visibility
@@ -208,6 +234,7 @@ gtag('config', 'GA_MEASUREMENT_ID');
 ## 🛠️ Maintenance & Updates
 
 ### Regular Tasks
+
 - Monitor search rankings
 - Update meta descriptions
 - Add new product pages
@@ -215,6 +242,7 @@ gtag('config', 'GA_MEASUREMENT_ID');
 - Check for broken links
 
 ### Monthly Reviews
+
 - Analyze Google Analytics data
 - Review Search Console reports
 - Update keyword strategy

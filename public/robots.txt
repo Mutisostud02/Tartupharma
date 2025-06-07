@@ -2,8 +2,8 @@ User-agent: *
 Allow: /
 
 # Sitemaps
-Sitemap: https://TartupharmaMedical.co.ke/sitemap.xml
-Sitemap: https://TartupharmaMedical.co.ke/sitemap-products.xml
+Sitemap: https://tartupharmamedics.com/sitemap.xml
+Sitemap: https://tartupharmamedics.com/sitemap-products.xml
 
 # Crawl-delay for respectful crawling
 Crawl-delay: 1
