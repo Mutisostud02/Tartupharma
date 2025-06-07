@@ -225,8 +225,8 @@ const ContactUsPage = () => {
               <div className="contact-detail">
                 <h3>Email</h3>
                 <p>
-                  <a href="mailto:sales@tartupharma.com">
-                    sales@tartupharma.com
+                  <a href="mailto:info@tartupharmamedics.com">
+                    info@tartupharmamedics.com
                   </a>
                 </p>
               </div>

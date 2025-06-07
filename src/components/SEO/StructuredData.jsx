@@ -23,7 +23,7 @@ const StructuredData = ({ page = "home", product = null, category = null }) => {
       "@type": "ContactPoint",
       telephone: "+372-7-123-456",
       contactType: "sales",
-      email: "sales@tartupharma.com",
+      email: "info@tartupharmamedics.com",
     },
     sameAs: [
       "https://www.facebook.com/tartupharma",

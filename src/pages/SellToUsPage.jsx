@@ -85,7 +85,9 @@ const SellToUsPage = () => {
               <h3>Alternative Contact Methods:</h3>
               <div className="contact-item">
                 <strong>E-mail:</strong>
-                <a href="mailto:sales@tartupharma.com">sales@tartupharma.com</a>
+                <a href="mailto:info@tartupharmamedics.com">
+                  info@tartupharmamedics.com
+                </a>
               </div>
               <div className="contact-item">
                 <strong>Tel.:</strong>

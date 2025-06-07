@@ -18,7 +18,9 @@ const Footer = ({ onPageChange, onCategoryChange }) => {
             <p>
               <strong>Email:</strong>
               <br />
-              <a href="mailto:sales@tartupharma.com">sales@tartupharma.com</a>
+              <a href="mailto:info@tartupharmamedics.com">
+                info@tartupharmamedics.com
+              </a>
             </p>
             <p>
               <strong>Phone:</strong>
