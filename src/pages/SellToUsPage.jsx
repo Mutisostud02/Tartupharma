@@ -26,8 +26,41 @@ const SellToUsPage = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Here you would typically send the data to your backend
-    console.log("Form submitted:", formData);
+    console.log("Sell to us form submitted:", formData);
+
+    // Create email with equipment details
+    const emailSubject = `Equipment Sale Inquiry from ${formData.firstName} ${formData.lastName}`;
+    const emailBody = `
+Dear Tartupharma Medical Equipments Team,
+
+You have received a new equipment sale inquiry:
+
+SELLER DETAILS:
+- Name: ${formData.firstName} ${formData.lastName}
+- Email: ${formData.email}
+- Phone: ${formData.phone}
+- Company: ${formData.companyName}
+- Location: ${formData.location}
+
+EQUIPMENT DETAILS:
+${formData.message || "No equipment details provided."}
+
+PREFERENCES:
+- Newsletter: ${formData.receiveNewsletter ? "Yes" : "No"}
+
+SUBMISSION DATE: ${new Date().toLocaleDateString()} ${new Date().toLocaleTimeString()}
+
+Please contact the seller to discuss the equipment details and potential purchase.
+    `.trim();
+
+    // Create mailto link
+    const mailtoLink = `mailto:info@tartupharmamedics.com?subject=${encodeURIComponent(
+      emailSubject
+    )}&body=${encodeURIComponent(emailBody)}`;
+
+    // Open email client
+    window.location.href = mailtoLink;
+
     setIsSubmitted(true);
 
     // Reset form after 3 seconds

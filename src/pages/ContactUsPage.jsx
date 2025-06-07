@@ -27,6 +27,40 @@ const ContactUsPage = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log("Contact form submitted:", formData);
+
+    // Create email with contact form details
+    const emailSubject = `Contact Form Submission from ${formData.firstName} ${formData.lastName}`;
+    const emailBody = `
+Dear Tartupharma Medical Equipments Team,
+
+You have received a new contact form submission:
+
+CONTACT DETAILS:
+- Name: ${formData.firstName} ${formData.lastName}
+- Email: ${formData.email}
+- Phone: ${formData.phone}
+- Company: ${formData.companyName}
+- Location: ${formData.location}
+
+MESSAGE:
+${formData.message || "No message provided."}
+
+PREFERENCES:
+- Newsletter: ${formData.receiveNewsletter ? "Yes" : "No"}
+
+SUBMISSION DATE: ${new Date().toLocaleDateString()} ${new Date().toLocaleTimeString()}
+
+Please respond to this inquiry promptly.
+    `.trim();
+
+    // Create mailto link
+    const mailtoLink = `mailto:info@tartupharmamedics.com?subject=${encodeURIComponent(
+      emailSubject
+    )}&body=${encodeURIComponent(emailBody)}`;
+
+    // Open email client
+    window.location.href = mailtoLink;
+
     setIsSubmitted(true);
 
     setTimeout(() => {

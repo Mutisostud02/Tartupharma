@@ -71,9 +71,48 @@ const ProductDetailPage = ({ productId, onBack }) => {
 
     console.log("Quote request submitted:", quoteData);
 
-    // In a real app, this would send the form data to a server
+    // Create email body with quote details
+    const emailSubject = `Quote Request for ${product.id} - ${product.name}`;
+    const emailBody = `
+Dear Tartupharma Medical Equipments Team,
+
+I would like to request a quote for the following equipment:
+
+PRODUCT DETAILS:
+- Product ID: ${product.id}
+- Product Name: ${product.name}
+- Manufacturer: ${product.manufacturer}
+- Model: ${product.model}
+- Type: ${product.type}
+
+CUSTOMER DETAILS:
+- Name: ${quoteData.firstName} ${quoteData.lastName}
+- Email: ${quoteData.email}
+- Phone: ${quoteData.phone}
+- Company: ${quoteData.company}
+
+MESSAGE:
+${quoteData.message || "No additional message provided."}
+
+REQUEST DATE: ${new Date().toLocaleDateString()} ${new Date().toLocaleTimeString()}
+
+Please provide a detailed quote including pricing, delivery options, and any additional information.
+
+Best regards,
+${quoteData.firstName} ${quoteData.lastName}
+    `.trim();
+
+    // Create mailto link
+    const mailtoLink = `mailto:info@tartupharmamedics.com?subject=${encodeURIComponent(
+      emailSubject
+    )}&body=${encodeURIComponent(emailBody)}`;
+
+    // Open email client
+    window.location.href = mailtoLink;
+
+    // Show success message
     alert(
-      `Quote request submitted successfully for ${product.name}! We will contact you within 24 hours.`
+      `Quote request prepared! Your email client should open with the quote details. If it doesn't open automatically, please send an email to info@tartupharmamedics.com with your quote request for ${product.name}.`
     );
     setShowQuoteForm(false);
   };
@@ -83,17 +122,34 @@ const ProductDetailPage = ({ productId, onBack }) => {
   };
 
   const handleShare = () => {
-    if (navigator.share) {
-      navigator.share({
-        title: productDetails.name,
-        text: `Check out this ${productDetails.type} from ${productDetails.manufacturer}`,
-        url: window.location.href,
-      });
-    } else {
-      // Fallback: copy to clipboard
-      navigator.clipboard.writeText(window.location.href);
-      alert("Product link copied to clipboard!");
-    }
+    // Create email share with product details
+    const emailSubject = `Product Inquiry: ${product.id} - ${product.name}`;
+    const emailBody = `
+Dear Tartupharma Medical Equipments Team,
+
+I am interested in the following equipment:
+
+PRODUCT DETAILS:
+- Product ID: ${product.id}
+- Product Name: ${product.name}
+- Manufacturer: ${product.manufacturer}
+- Model: ${product.model}
+- Type: ${product.type}
+
+Product Link: ${window.location.href}
+
+Please provide more information about this equipment including availability, pricing, and specifications.
+
+Best regards
+    `.trim();
+
+    // Create mailto link
+    const mailtoLink = `mailto:info@tartupharmamedics.com?subject=${encodeURIComponent(
+      emailSubject
+    )}&body=${encodeURIComponent(emailBody)}`;
+
+    // Try to open email client
+    window.location.href = mailtoLink;
   };
 
   return (
@@ -155,7 +211,9 @@ const ProductDetailPage = ({ productId, onBack }) => {
               </p>
               <p>
                 Email:{" "}
-                <a href="mailto:sales@tartupharma.com">sales@tartupharma.com</a>
+                <a href="mailto:info@tartupharmamedics.com">
+                  info@tartupharmamedics.com
+                </a>
               </p>
             </div>
           </div>
