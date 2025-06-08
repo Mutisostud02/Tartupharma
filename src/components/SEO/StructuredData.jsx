@@ -9,9 +9,9 @@ const StructuredData = ({ page = "home", product = null, category = null }) => {
     "@type": "Organization",
     name: "Tartupharma Medical Equipments",
     url: baseUrl,
-    logo: `${baseUrl}/images/tartupharma-logo.png`,
+    logo: `${baseUrl}/images/tartupharma-logo-correct.png`,
     description:
-      "Leading supplier of pharmaceutical equipment in Kenya. Quality medical machinery for pharmaceutical manufacturing.",
+      "Leading supplier of pharmaceutical equipment in Estonia. Quality medical machinery for pharmaceutical manufacturing.",
     address: {
       "@type": "PostalAddress",
       streetAddress: "Riia tn 142",

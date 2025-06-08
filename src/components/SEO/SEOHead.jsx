@@ -11,12 +11,12 @@ const SEOHead = ({
 }) => {
   const baseUrl = "https://tartupharmamedics.com";
   const defaultTitle =
-    "Tartupharma Medical Equipments - Pharmaceutical Machinery & Equipment Kenya";
+    "Tartupharma Medical Equipments - Pharmaceutical Machinery & Equipment Estonia";
   const defaultDescription =
-    "Leading supplier of pharmaceutical equipment in Kenya. Granulators, tablet presses, capsule filling machines, coating equipment, and more. Quality medical machinery for pharmaceutical manufacturing.";
+    "Leading supplier of pharmaceutical equipment in Estonia. Granulators, tablet presses, capsule filling machines, coating equipment, and more. Quality medical machinery for pharmaceutical manufacturing.";
   const defaultKeywords =
-    "pharmaceutical equipment Kenya, medical machinery, tablet presses, granulators, capsule filling machines, coating equipment, pharmaceutical manufacturing, medical equipment supplier";
-  const defaultOgImage = `${baseUrl}/images/tartupharma-logo-og.png`;
+    "pharmaceutical equipment Estonia, medical machinery, tablet presses, granulators, capsule filling machines, coating equipment, pharmaceutical manufacturing, medical equipment supplier";
+  const defaultOgImage = `${baseUrl}/images/tartupharma-logo-correct.png`;
 
   const finalTitle = title || defaultTitle;
   const finalDescription = description || defaultDescription;
