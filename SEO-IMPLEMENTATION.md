@@ -106,27 +106,27 @@ src/components/SEO/
 
 ### Primary Keywords
 
-- pharmaceutical equipment Kenya
-- medical machinery Kenya
-- tablet presses Kenya
-- granulators Kenya
-- capsule filling machines Kenya
+- pharmaceutical equipment Estonia
+- medical machinery Estonia
+- tablet presses Estonia
+- granulators Estonia
+- capsule filling machines Estonia
 
 ### Secondary Keywords
 
 - pharmaceutical manufacturing equipment
-- medical equipment supplier Kenya
+- medical equipment supplier Estonia
 - pharmaceutical machinery
-- coating equipment Kenya
+- coating equipment Estonia
 - pharmaceutical processing equipment
 
 ### Long-tail Keywords
 
-- pharmaceutical equipment supplier in Kenya
+- pharmaceutical equipment supplier in Estonia
 - medical machinery for pharmaceutical manufacturing
-- tablet press machines Kenya
+- tablet press machines Estonia
 - granulator equipment pharmaceutical
-- capsule filling equipment Kenya
+- capsule filling equipment Estonia
 
 ## 📊 SEO Monitoring & Analytics
 
@@ -168,12 +168,12 @@ gtag("config", "GA_MEASUREMENT_ID");
 - [ ] Add hreflang tags for international SEO
 - [ ] Set up XML sitemap auto-generation
 
-### 4. Local SEO (Kenya Focus)
+### 4. Local SEO (Estonia Focus)
 
 - [ ] Add Google My Business listing
 - [ ] Implement local business schema
 - [ ] Add location-specific keywords
-- [ ] Create location pages for different Kenyan cities
+- [ ] Create location pages for different Estonian cities
 
 ## 📱 Mobile & Performance SEO
 
@@ -207,7 +207,7 @@ gtag("config", "GA_MEASUREMENT_ID");
    - Monitor performance
 
 3. **Local Directories**
-   - Kenya business directories
+   - Estonia business directories
    - Medical equipment directories
    - B2B marketplaces
 
@@ -216,7 +216,7 @@ gtag("config", "GA_MEASUREMENT_ID");
 ### Improved Rankings
 
 - Better visibility for pharmaceutical equipment searches
-- Higher rankings for Kenya-specific queries
+- Higher rankings for Estonia-specific queries
 - Enhanced local search presence
 
 ### Enhanced User Experience
@@ -248,4 +248,4 @@ gtag("config", "GA_MEASUREMENT_ID");
 - Update keyword strategy
 - Optimize underperforming pages
 
-This SEO implementation provides a solid foundation for the Tartupharma Medical Equipments website to rank well in search engines and attract relevant traffic from Kenya and beyond.
+This SEO implementation provides a solid foundation for the Tartupharma Medical Equipments website to rank well in search engines and attract relevant traffic from Estonia and beyond.

@@ -102,12 +102,12 @@ function AppContent() {
       case "home":
         return {
           title:
-            "Tartupharma Medical Equipments - Pharmaceutical Machinery & Equipment Kenya",
+            "Tartupharma Medical Equipments - Pharmaceutical Machinery & Equipment Estonia",
           description:
-            "Leading supplier of pharmaceutical equipment in Kenya. Granulators, tablet presses, capsule filling machines, coating equipment, and more. Quality medical machinery for pharmaceutical manufacturing.",
+            "Leading supplier of pharmaceutical equipment in Estonia. Granulators, tablet presses, capsule filling machines, coating equipment, and more. Quality medical machinery for pharmaceutical manufacturing.",
           canonical: baseUrl,
           keywords:
-            "pharmaceutical equipment Kenya, medical machinery, tablet presses, granulators, capsule filling machines, coating equipment",
+            "pharmaceutical equipment Estonia, medical machinery, tablet presses, granulators, capsule filling machines, coating equipment",
         };
       case "machines": {
         const categoryData = getCategoryData(selectedCategory);
